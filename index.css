@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    background-color: white; /* для наглядности */
+    height: 100vh; /* высота по содержимому */
+     overflow: hidden; /* чтобы скрыть часть изображения, выходящую за границы */
+    }
+
+.image-container {
+    position: absolute;
+    width: 648px;
+    height: 1107.7px;
+
+    /* left не указано, поэтому будет 0 по умолчанию */
+    background-color: #ddd; /*заглушка, если изображение не загрузится */
+     }    
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* или contain, в зависимости от ваших потребностей */
+    } 
